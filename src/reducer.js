@@ -4,7 +4,7 @@ import { combineReducers } from 'redux';
 const countReducer = (state = 0, action) => {
   switch (action.type) {
     case 'increment':
-      return state + 1;
+      return state+1;
     case 'decrement':
       return state - 1;
     default:
@@ -27,7 +27,9 @@ const greetReducer = (state = '', action) => {
 
 const rootReducer = combineReducers({
   count: countReducer,
-  greet: greetReducer
+  // greet: greetReducer
 });
 
 export default rootReducer;
+
+
